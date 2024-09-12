@@ -1,9 +1,8 @@
-var x;
-console.log(x);
-var x=10;
-if (x===undefined){
-    console.log("x is undefined");
+function a(){
+  c();
+  function c(){
+    console.log(b);
+  }
 }
-else{
-    console.log("x is defined to some value")
-}
+var b=10;
+a();
