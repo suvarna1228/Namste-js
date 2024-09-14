@@ -1,8 +1,5 @@
-function a(){
-  c();
-  function c(){
-    console.log(b);
-  }
+{
+    var a=10;
+    let b=20;
+    const c=30;
 }
-var b=10;
-a();
