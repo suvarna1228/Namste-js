@@ -1,5 +1,8 @@
-{
-    var a=10;
-    let b=20;
-    const c=30;
+function x(){
+    var a=7;
+    function y(){
+        console.log(a);
+    }
+y();
 }
+x();
