@@ -1,8 +1,8 @@
-function x(){
-    var a=7;
-    function y(){
-        console.log(a);
-    }
-y();
+function attachEventListeners(){
+    let count=0;
+    document.querySelector("#clickme").addEventListener("click", function x(){
+        console.log("Button clicked",++count);
+    
+    });
 }
-x();
+attachEventListeners();
