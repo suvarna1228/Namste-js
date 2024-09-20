@@ -1,8 +1,16 @@
-function attachEventListeners(){
-    let count=0;
-    document.querySelector("#clickme").addEventListener("click", function x(){
-        console.log("Button clicked",++count);
-    
-    });
+console.log("start");
+
+setTimeout(function Cb() {
+    console.log("callback");
+}, 5000);
+
+console.log("end");
+
+
+let startDate = new Date().getTime(); 
+let endDate = startDate;
+while (endDate < startDate +10000) {
+   endDate = new Date().getTime(); 
 }
-attachEventListeners();
+
+
