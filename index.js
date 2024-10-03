@@ -18,15 +18,23 @@
 // .catch((err) => {
 //     console.error(err);
 // });
-const p = new Promise((resolve,reject)=>{
-    resolve("hi");
-});
+// const p = new Promise((resolve,reject)=>{
+//     resolve("hi");
+// });
 
-async function handlePromise() {
-   const val = await p;
-   console.log(val);
-}
- handlePromise();
+// async function handlePromise() {
+//    const val = await p;
+//    console.log(val);
+// }
+//  handlePromise();
 // const data =getData();
 
 // data.then((res)=>console.log(res));
+const API_URL="https://api.github.com/users/suvarna1228"
+
+async function handlePromise() {
+  const data= await fetch(API_URL);
+  const jsonValue = await data.json();
+  console.log(jsonValue);
+ }
+  handlePromise();
